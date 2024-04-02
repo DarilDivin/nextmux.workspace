@@ -1,0 +1,7 @@
+# Dossiers
+node_modules/
+.next/
+
+# Fichiers
+.DS_Store
+.env.local
