@@ -78,7 +78,8 @@ const config = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
       inter: ['Inter', 'sans-serif']
-    }
+    },
+
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
