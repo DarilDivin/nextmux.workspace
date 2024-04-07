@@ -3,7 +3,6 @@
 import React from 'react';
 
 import LandingLayout from '@/components/layouts/LandingLayout';
-// import {Button, buttonVariants} from "@/components/ui/button";
 import {Card, Card2} from "@/components/card";
 import Carousel from "@/components/carousel";
 import {Accordion, AccordionItem, AccordionContent, AccordionTrigger} from '@/components/accordion';
@@ -27,8 +26,6 @@ const Home: React.FC = () => {
             "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ",
         },
     ];
-
-
 
     return (
     <LandingLayout>
