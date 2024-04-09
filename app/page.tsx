@@ -3,9 +3,9 @@
 import React from 'react';
 
 import LandingLayout from '@/components/layouts/LandingLayout';
-import {Card, Card2} from "@/components/card";
-import Carousel from "@/components/carousel";
-import {Accordion, AccordionItem, AccordionContent, AccordionTrigger} from '@/components/accordion';
+import {Card, Card2} from "@/components/ui/card";
+import Carousel from "@/components/ui/carousel";
+import {Accordion, AccordionItem, AccordionContent, AccordionTrigger} from '@/components/ui/accordion';
 
 const Home: React.FC = () => {
 
@@ -288,20 +288,7 @@ const Home: React.FC = () => {
                                 <AccordionContent className='font-poppins font-normal text-sm text-[#696969]'>{q.answer}</AccordionContent>
                             </AccordionItem>
                         ))}
-
-                        {/*<AccordionItem value="item-2" className='p-4 bg-white rounded-2xl border-2 border-[#707070] border-opacity-50 mb-4'>*/}
-                        {/*    <AccordionTrigger className='font-poppins font-medium text-lg'>Is it unstyled?</AccordionTrigger>*/}
-                        {/*    <AccordionContent className='font-poppins font-normal text-sm text-[#696969]'>*/}
-                        {/*        Yes. It's unstyled by default, giving you freedom over the look and feel.*/}
-                        {/*    </AccordionContent>*/}
-                        {/*</AccordionItem>*/}
-
-                        {/*<AccordionItem value="item-3" className='p-4 bg-white rounded-2xl border-2 border-[#707070] border-opacity-50 mb-4'>*/}
-                        {/*    <AccordionTrigger className='font-poppins font-medium text-lg'>Can it be animated?</AccordionTrigger>*/}
-                        {/*    <AccordionContent className='font-poppins font-normal text-sm text-[#696969]'>*/}
-                        {/*        Yes! You can animate the Accordion with CSS or JavaScript.*/}
-                        {/*    </AccordionContent>*/}
-                        {/*</AccordionItem>*/}
++
                     </Accordion>
                 </div>
 
