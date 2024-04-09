@@ -288,7 +288,7 @@ const Home: React.FC = () => {
                                 <AccordionContent className='font-poppins font-normal text-sm text-[#696969]'>{q.answer}</AccordionContent>
                             </AccordionItem>
                         ))}
-+
+
                     </Accordion>
                 </div>
 
