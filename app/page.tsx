@@ -30,23 +30,25 @@ const Home: React.FC = () => {
     return (
     <LandingLayout>
       <main className="flex flex-col items-center justify-between  min-h-screen">
-        <div className='flex min-w-full p-24 h-screen' style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}>
+        <div 
+            className='flex min-w-full p-8 sm:p-24 h-auto sm:h-screen' 
+            style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}
+        >
 
-            <div className=' flex flex-col h-full w-6/12 items-start justify-center'>
+            <div className='flex flex-col h-full w-full sm:w-6/12 items-center sm:items-start sm:justify-center'>
 
-                <h1 className="font-extrabold text-6xl font-poppins mb-12">
+                <h1 className="font-bold text-4xl text-center sm:text-start sm:font-extrabold sm:text-6xl font-poppins mb-12 sm:leading-[4rem]">
                     <span className='text-custom2'>Transformez les <br/> méthodes de travail de <br/> vos équipes</span>
                     <span className='text-custom'> avec next <br/> business workspace.</span>
                 </h1>
 
-                <p className=' font-normal font-inter text-2xl mb-12 text-[#7E7F83]'>
+                <p className='text-center sm:text-start font-normal font-inter text-xl sm:text-2xl mb-12 text-[#7E7F83]'>
                     Simplifiez la gestion de projets, renforcez la <br/> collaboration et optimisez les ressources humaines <br/> avec notre application d'entreprise tout-en-un.
                 </p>
 
-                <button className='px-12 py-2 border-2 rounded-xl font-inter font-bold border-custom2 text-custom2 hover:bg-custom2 hover:text-white transition ease-out'>Get Started</button>
-                {/*<Button className='bg-white px-12 py-2 border-2 rounded-xl font-inter font-bold border-custom2 text-custom2 hover:bg-custom2 hover:text-white transition ease-out'>Get Started</Button>*/}
+                <button className='px-12 py-2 border-2 rounded-[7px] font-inter font-bold border-custom2 text-custom2 hover:bg-custom2 hover:text-white transition ease-out'>Get Started</button>
             </div>
-            <div className='flex justify-center items-end h-full w-6/12'>
+            <div className='hidden  md:flex justify-center items-end h-full w-6/12'>
 
                 <div className='w-[800px] aspect-[4/3]'>
                     <img className='object-cover w-full h-full' src="/etudeEnLigne1.svg" alt="image"/>
@@ -55,15 +57,15 @@ const Home: React.FC = () => {
             </div>
 
         </div>
-        <div className='min-w-full px-24 py-12 h-auto'>
-            <h1 className="font-medium text-6xl font-poppins mb-8 text-custom2 tracking-tighter">Pourquoi nous choisir</h1>
-            <p className="font-normal font-inter text-lg w-[750px] mb-12 text-[#7e7f83]">
+        <div className='flex flex-col items-center min-w-full p-8 sm:px-24 py-12 h-auto'>
+            <h1 className="font-medium text-4xl sm:text-6xl sm:self-start font-poppins mb-8 text-custom2 tracking-tighter">Pourquoi nous choisir</h1>
+            <p className="text-center sm:text-start font-normal sm:self-start font-inter text-lg w-[360px] md:w-[750px] mb-12 text-[#7e7f83]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Sapien, est felis, sagittis viverra nulla mattis scelerisque.
                 Eget cras integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer.
             </p>
-            <div className='py-12 px-16 flex flex-row justify-evenly'>
+            <div className='py-12 px-16 flex flex-row flex-wrap justify-evenly'>
                 <Card
                     imgsrc='/kisspng-computer-icons-productivity-business-development-business.svg'
                     title={'Augmenter votre productivité'}
@@ -81,26 +83,26 @@ const Home: React.FC = () => {
                 />
             </div>
         </div>
-        <div className='flex flex-row min-w-full px-24 py-14 h-auto bg-[#24292d] text-white'>
-            <div className='w-1/2 flex flex-col justify-between items-center'>
-                <div className='w-full '>
-                    <h1 className='font-poppins font-bold text-4xl mb-6'>Nos Meilleurs Fonctionnalités</h1>
-                    <p className='font-inter font-medium w-[650px] text-lg '>
+        <div className='flex flex-col sm:flex-row flex-wrap min-w-full p-8 md:px-24 md:py-14 h-auto bg-[#24292d] text-white'>
+            <div className=' sm:w-1/2 flex flex-col justify-between items-center'>
+                <div className='w-full flex flex-col items-center sm:items-start'>
+                    <h1 className='font-poppins font-bold text-4xl text-center sm:text-start mb-6'>Nos Meilleurs Fonctionnalités</h1>
+                    <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg text-center sm:text-start '>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sapien, est felis, sagittis viverra nulla mattis scelerisque.
                         Eget cras integer.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sapien, est felis, sagittis viverra nulla mattis scelerisque. Eget cras integer.
                     </p>
                 </div>
-                <div className='flex w-full'>
+                <div className='flex w-full justify-center sm:justify-start'>
                     <button
-                        className='px-12 py-2 border-2 rounded-xl font-inter font-bold border-custom2 text-white mt-12 mb-4 hover:bg-custom2 transition ease-out'>
-                        Get Started
+                        className='px-12 py-2 border-2 rounded-[7px] font-inter font-bold border-custom2 text-white mt-12 mb-4 hover:bg-custom2 transition ease-out'>
+                        Commencer maintenant
                     </button>
 
                 </div>
             </div>
-            <div className='w-1/2 h-full flex flex-row gap-12 justify-center'>
+            <div className='w-full sm:w-1/2 h-full flex flex-row gap-12 justify-center flex-wrap mt-8 sm:mt-0'>
                 <div className='flex flex-col gap-8 pb-12'>
                     <div className='flex flex-col border-2 border-custom2 rounded-2xl w-[300px] p-4'>
                         <div className='h-[80px] '>
@@ -148,43 +150,43 @@ const Home: React.FC = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-row-reverse min-w-full px-24 py-14 h-auto'>
-            <div className='w-1/2 flex flex-col justify-between '>
+        <div className='flex flex-wrap sm:flex-row-reverse min-w-full p-8 md:px-24 md:py-14 h-auto'>
+            <div className='sm:w-1/2 flex flex-col justify-between '>
                 <div className='w-full flex flex-col items-center'>
-                    <h1 className='font-poppins font-bold text-4xl mb-6 w-[650px] text-end text-custom2'>Avantages de notre solution pour votre entreprise</h1>
+                    <h1 className='font-poppins font-bold text-4xl mb-6 w-[90%] sm:w-[650px] text-center sm:text-end text-custom2'>Avantages de notre solution pour votre entreprise</h1>
 
-                    <p className='font-inter font-medium w-[650px] text-lg mb-8'>
+                    <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg mb-8'>
                         <span className='font-bold'>Rapports et Analyses</span> : Des outils de génération de rapports personnalisables pour
                         évaluer les performances du projet, la charge de travail de l'équipe, et d'autres métriques importantes.
                     </p>
 
-                    <p className='font-inter font-medium w-[650px] text-lg mb-8'>
+                    <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg mb-8'>
                         <span className='font-bold'>Rapports et Analyses</span> : Des outils de génération de rapports personnalisables pour
                         évaluer les performances du projet, la charge de travail de l'équipe, et d'autres métriques importantes.
                     </p>
 
-                    <p className='font-inter font-medium w-[650px] text-lg mb-8'>
+                    <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg mb-8'>
                         <span className='font-bold'>Rapports et Analyses</span> : Des outils de génération de rapports personnalisables pour
                         évaluer les performances du projet, la charge de travail de l'équipe, et d'autres métriques importantes.
                     </p>
 
-                    <p className='font-inter font-medium w-[650px] text-lg mb-8'>
+                    <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg mb-8'>
                         <span className='font-bold'>Rapports et Analyses</span> : Des outils de génération de rapports personnalisables pour
                         évaluer les performances du projet, la charge de travail de l'équipe, et d'autres métriques importantes.
                     </p>
 
                 </div>
                 <div className='flex w-full justify-center'>
-                    <div className='w-[650px]'>
+                <div className='flex w-full justify-center sm:justify-start sm:w-[650px]'>
                         <button
-                            className='px-12 py-2 border-2 rounded-xl font-inter font-bold border-custom2 text-custom2 hover:text-white mt-12 mb-4 hover:bg-custom2 transition ease-out'>
+                            className='px-12 py-2 border-2 rounded-[7px] font-inter font-bold border-custom2 text-custom2 hover:text-white mt-12 mb-4 hover:bg-custom2 transition ease-out'>
                             Commencer maintenant
                         </button>
                     </div>
 
                 </div>
             </div>
-            <div className='w-1/2 h-full flex flex-row gap-12'>
+            <div className='w-full sm:w-1/2 h-full flex flex-row flex-wrap justify-center mt-8 sm:mt-0 gap-12'>
                 <div className='flex flex-col gap-8 pb-12'>
                     <div className='flex flex-col border-2 border-custom2 rounded-2xl w-[300px] p-4'>
                         <div className='h-[80px] '>
@@ -230,10 +232,10 @@ const Home: React.FC = () => {
                 </div>
             </div>
         </div>
-        <div className='min-w-full px-24 py-12 bg-[#24292d] text-white'>
-            <div className='w-[580px]'>
-                <h1 className='font-extrabold font-poppins text-4xl mb-8'>Avantages de notre solution pour vos clients</h1>
-                <p className='font-poppins font-normal text-lg opacity-90 mb-8'>
+        <div className='min-w-full px-8 md:px-24 py-12 bg-[#24292d] text-white'>
+            <div className='w-full sm:w-[580px]'>
+                <h1 className='font-extrabold font-poppins text-center sm:text-start text-4xl mb-8'>Avantages de notre solution pour vos clients</h1>
+                <p className='font-poppins font-normal text-lg opacity-90 mb-8 text-center sm:text-start'>
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore
                     magna aliquyam
@@ -265,17 +267,20 @@ const Home: React.FC = () => {
         <div className='min-w-full px-24 py-12 bg-custom '>
             <Carousel></Carousel>
         </div>
-        <div className='flex min-w-full p-24 h-screen' style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}>
+        <div 
+            className='flex min-w-full p-8 sm:p-24 h-auto md:h-screen' 
+            style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}
+        >
 
-            <div className=' flex flex-col h-full w-6/12 items-start justify-start'>
+            <div className='flex flex-col h-full w-full sm:w-6/12 items-center sm:items-start justify-start'>
 
-                <h1 className="font-bold text-4xl font-poppins mb-12">
-                    <span className='text-custom2'>Questions fréquentes posées</span>
+                <h1 className="font-bold text-4xl font-poppins mb-12 text-center sm:text-start">
+                    <span className='text-custom2 text-center sm:text-start'>Questions fréquentes posées</span>
                 </h1>
 
-                <div className="flex">
+                <div className="flex justify-center">
                     <Accordion
-                        className="w-[550px] rounded-2xl"
+                        className="w-full sm:w-[550px] rounded-2xl"
                         type="single"
                         defaultValue="item-1"
                         collapsible
@@ -293,7 +298,7 @@ const Home: React.FC = () => {
                 </div>
 
             </div>
-            <div className='flex justify-center items-end h-full w-6/12'>
+            <div className='hidden sm:flex justify-center items-end h-full w-6/12'>
 
                 <div className='w-[800px] aspect-[4/3]'>
                     <img className='object-cover w-full h-full' src="/faq.svg" alt="image"/>

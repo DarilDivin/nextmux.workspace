@@ -10,7 +10,8 @@ import DropdownMenuComponent from '@/components/DropdownMenuComponent';
 
 const Header: React.FC = () => {
   return (
-    <header className="w-full text-gray-700 bg-custom border-t border-custom shadow-sm body-font fixed top-0 z-10">
+    // Il y avait la classe "fixed" que j'ai retiré dans le header    
+    <header className="w-full text-gray-700 bg-custom border-t border-custom shadow-sm body-font top-0 z-10"> 
       <div className="container-fluid flex items-center justify-between lg:p-4 px-2 py-4 mx-auto flex-row">
         <div className='flex flex-row items-center'>
           <Link href={'#'} className="lg:flex items-center font-medium text-white title-font md:mb-0">

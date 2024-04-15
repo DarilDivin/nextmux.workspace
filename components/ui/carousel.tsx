@@ -19,11 +19,11 @@ const Carousel =  () => {
                 navigation
                 pagination={{type: "bullets", clickable: true}}
                 modules={[Navigation,Pagination]}
-                className='h-96 w-full rounded-lg'
+                className='h-[500px] w-full rounded-lg'
             >
                 <SwiperSlide className='text-white'>
                     <div className='flex flex-col items-center'>
-                        <div className='w-[700px] flex flex-col items-center'>
+                        <div className='w-[360px] md:w-[700px] flex flex-col items-center'>
                             <div className=''>
                                 <img src='/coma.svg'/>
                             </div>
@@ -42,7 +42,7 @@ const Carousel =  () => {
                 </SwiperSlide>
                 <SwiperSlide className='text-white'>
                     <div className='flex flex-col items-center'>
-                        <div className='w-[700px] flex flex-col items-center'>
+                        <div className='w-[360px] md:w-[700px] flex flex-col items-center'>
                             <div className=''>
                                 <img src='/coma.svg'/>
                             </div>
@@ -61,7 +61,7 @@ const Carousel =  () => {
                 </SwiperSlide>
                 <SwiperSlide className='text-white'>
                     <div className='flex flex-col items-center'>
-                        <div className='w-[700px] flex flex-col items-center'>
+                        <div className='w-[360px] md:w-[700px] flex flex-col items-center'>
                             <div className=''>
                                 <img src='/coma.svg'/>
                             </div>

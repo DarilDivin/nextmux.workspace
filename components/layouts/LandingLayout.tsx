@@ -27,7 +27,7 @@ export default function LandingLayout({ children, }: { children: React.ReactNode
           <head>
               <title> Nextmux Workspace </title>
           </head>
-          <body>
+          <body className="w-full overflow-x-hidden">
               <Header/>
                 {children}
               <Footer/>
