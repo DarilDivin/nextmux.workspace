@@ -31,24 +31,24 @@ const Home: React.FC = () => {
     <LandingLayout>
       <main className="flex flex-col items-center justify-between  min-h-screen">
         <div 
-            className='flex min-w-full p-8 sm:p-24 h-auto sm:h-screen' 
+            className='flex md:flex-col min-w-full p-8 md:p-24 sm:h-auto 2xl:h-screen xl:flex-row' 
             style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}
         >
 
-            <div className='flex flex-col h-full w-full sm:w-6/12 items-center sm:items-start sm:justify-center'>
+            <div className='flex flex-col h-full w-full xl:w-6/12 items-center md:items-start md:justify-center sm:p-8'>
 
-                <h1 className="font-bold text-4xl text-center sm:text-start sm:font-extrabold sm:text-6xl font-poppins mb-12 sm:leading-[4rem]">
+                <h1 className="font-bold text-4xl text-center md:text-start md:font-extrabold md:text-6xl font-poppins mb-12 md:leading-[4rem]">
                     <span className='text-custom2'>Transformez les <br/> méthodes de travail de <br/> vos équipes</span>
                     <span className='text-custom'> avec next <br/> business workspace.</span>
                 </h1>
 
-                <p className='text-center sm:text-start font-normal font-inter text-xl sm:text-2xl mb-12 text-[#7E7F83]'>
+                <p className='text-center md:text-start font-normal font-inter text-xl md:text-2xl mb-12 text-[#7E7F83]'>
                     Simplifiez la gestion de projets, renforcez la <br/> collaboration et optimisez les ressources humaines <br/> avec notre application d'entreprise tout-en-un.
                 </p>
 
                 <button className='px-12 py-2 border-2 rounded-[7px] font-inter font-bold border-custom2 text-custom2 hover:bg-custom2 hover:text-white transition ease-out'>Get Started</button>
             </div>
-            <div className='hidden  md:flex justify-center items-end h-full w-6/12'>
+            <div className='hidden md:justify-end  md:flex justify-center items-end h-full sm:w-full w-6/12'>
 
                 <div className='w-[800px] aspect-[4/3]'>
                     <img className='object-cover w-full h-full' src="/etudeEnLigne1.svg" alt="image"/>
@@ -83,8 +83,8 @@ const Home: React.FC = () => {
                 />
             </div>
         </div>
-        <div className='flex flex-col sm:flex-row flex-wrap min-w-full p-8 md:px-24 md:py-14 h-auto bg-[#24292d] text-white'>
-            <div className=' sm:w-1/2 flex flex-col justify-between items-center'>
+        <div className='flex flex-col xl:flex-row flex-wrap min-w-full p-8 md:px-24 md:py-14 h-auto bg-[#24292d] text-white'>
+            <div className=' xl:w-1/2 flex flex-col justify-between items-center'>
                 <div className='w-full flex flex-col items-center sm:items-start'>
                     <h1 className='font-poppins font-bold text-4xl text-center sm:text-start mb-6'>Nos Meilleurs Fonctionnalités</h1>
                     <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg text-center sm:text-start '>
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
 
                 </div>
             </div>
-            <div className='w-full sm:w-1/2 h-full flex flex-row gap-12 justify-center flex-wrap mt-8 sm:mt-0'>
+            <div className='w-full xl:w-1/2 h-full flex flex-row gap-12 sm:pt-8 justify-center flex-wrap mt-8 sm:mt-0'>
                 <div className='flex flex-col gap-8 pb-12'>
                     <div className='flex flex-col border-2 border-custom2 rounded-2xl w-[300px] p-4'>
                         <div className='h-[80px] '>
@@ -150,10 +150,10 @@ const Home: React.FC = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-wrap sm:flex-row-reverse min-w-full p-8 md:px-24 md:py-14 h-auto'>
-            <div className='sm:w-1/2 flex flex-col justify-between '>
+        <div className='flex flex-col flex-wrap xl:flex-row-reverse min-w-full p-8 md:px-24 md:py-14 h-auto'>
+            <div className='xl:w-1/2 flex flex-col justify-between '>
                 <div className='w-full flex flex-col items-center'>
-                    <h1 className='font-poppins font-bold text-4xl mb-6 w-[90%] sm:w-[650px] text-center sm:text-end text-custom2'>Avantages de notre solution pour votre entreprise</h1>
+                    <h1 className='font-poppins font-bold text-4xl mb-6 w-[90%] sm:w-[650px] text-center xl:text-end text-custom2'>Avantages de notre solution pour votre entreprise</h1>
 
                     <p className='font-inter font-medium w-[80%] sm:w-[650px] text-lg mb-8'>
                         <span className='font-bold'>Rapports et Analyses</span> : Des outils de génération de rapports personnalisables pour
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
 
                 </div>
             </div>
-            <div className='w-full sm:w-1/2 h-full flex flex-row flex-wrap justify-center mt-8 sm:mt-0 gap-12'>
+            <div className='w-full xl:w-1/2 sm:pt-8 xl:pt-0 h-full flex flex-row flex-wrap justify-center mt-8 sm:mt-0 gap-12'>
                 <div className='flex flex-col gap-8 pb-12'>
                     <div className='flex flex-col border-2 border-custom2 rounded-2xl w-[300px] p-4'>
                         <div className='h-[80px] '>
@@ -268,11 +268,11 @@ const Home: React.FC = () => {
             <Carousel></Carousel>
         </div>
         <div 
-            className='flex min-w-full p-8 sm:p-24 h-auto md:h-screen' 
+            className='flex sm:flex-col-reverse xl:flex-row min-w-full p-8 xl:p-24 h-auto xl:h-screen' 
             style={{ backgroundImage: 'url("https://nextmux.net/assets/images/bg.png")', backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"  }}
         >
 
-            <div className='flex flex-col h-full w-full sm:w-6/12 items-center sm:items-start justify-start'>
+            <div className='flex flex-col h-full w-full xl:w-6/12 items-center xl:items-start justify-start'>
 
                 <h1 className="font-bold text-4xl font-poppins mb-12 text-center sm:text-start">
                     <span className='text-custom2 text-center sm:text-start'>Questions fréquentes posées</span>
@@ -298,9 +298,9 @@ const Home: React.FC = () => {
                 </div>
 
             </div>
-            <div className='hidden sm:flex justify-center items-end h-full w-6/12'>
+            <div className='hidden sm:flex sm:mb-8 justify-center items-end h-full xl:w-6/12'>
 
-                <div className='w-[800px] aspect-[4/3]'>
+                <div className='xl:w-[800px] sm:w-[500px] aspect-[4/3]'>
                     <img className='object-cover w-full h-full' src="/faq.svg" alt="image"/>
                 </div>
 
